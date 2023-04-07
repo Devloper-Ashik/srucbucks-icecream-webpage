@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STURBUCKS ICECREAM </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+
+        <header> <a href="#" class="logo"><img src="images/logo.jpg" alt="logo" class="logo"></a>
+        
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> Menu</a></li>
+            <li><a href="#"> What's new </a></li>
+            <li><a href="#"> Contact</a></li>
+
+        </ul>
+        
+        </header>
+
+        <div class="content">
+            <div class="text-box">
+                <h2> It's not just icecream <br> It's <span>Sturbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione illum aspernatur molestias repellendus voluptatem debitis impedit rerum aut vitae officia perferendis nesciunt ipsum delectus odit blanditiis atque, doloribus magnam, nemo molestiae repudiandae dicta quia similique. Id vel sit iste ea magnam ut ullam. Praesentium eligendi maxime in aspernatur fugiat sit.</p>
+                <a href="#"> Learn more?</a>
+            </div>
+
+            <div class="imgbox">
+                <img src="images/thum1.png" alt="images" class="sturbucks">
+            </div>
+        </div>
+  <ul class="thum">
+    <li><img src="images/thum1.png" alt="picture" onclick="imgSlider('images/thum1.png');  changeCircleColor('#017143')"></li>
+    <li><img src="images/thum2.png" alt="picture" onclick="imgSlider('images/thum2.png');  changeCircleColor('#eb7495')"> </li>
+    <li><img src="images/thum3.png" alt="picture" onclick="imgSlider('images/thum3.png');  changeCircleColor('#d752b1')"></li>
+  </ul>
+
+<ul class="icon">
+    <li><a href="http://www.facebook.com" target="blank"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="http://www.instagram.com" target="blank"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="http://www.twitter.com" target="blank"><i class="fa fa-twitter"></i></a></li>
+</ul>
+
+</section>
+    
+
+<script type="text/javascript">
+   function imgSlider(anything){
+    document.querySelector('.sturbucks').src=anything;
+   }
+
+function changeCircleColor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+}
+</script>
+</body>
+</html>
